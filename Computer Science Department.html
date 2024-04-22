@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Science Department</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark text color for visibility */
+            position: fixed;
+            padding: 20px;
+            text-align: left;
+            border-right: 1px solid #ddd; /* Light border for separation */
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333; /* Text color */
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #f0f0f0; /* Light gray hover effect */
+        }
+
+        .content {
+            margin-left: 220px; /* Space for the sidebar */
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: calc(100vh - 60px); /* Account for the footer */
+        }
+
+        .course {
+            background-color: #e2e2e2;
+            border-radius: 10px;
+            padding: 15px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+            width: 200px; /* Fixed width for consistent design */
+        }
+
+        .course:hover {
+            background-color: #d2d2d2;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Computer Science Department</h1>
+</header>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="it_department.html">IT Department</a>
+    <a href="cs_department.html">Computer Science Department</a>
+    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a> <!-- Link to send email -->
+</div>
+
+<div class="content">
+    <div class="course" onclick="location.href='operating_systems.html'"> <!-- Make the course clickable -->
+        <div class="course-title">Operating Systems</div>
+        <div class="course-code">Course Code: حسب 405</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Computer Science Department - University Courses
+</footer>
+
+</body>
+</html>
