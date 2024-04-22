@@ -9,18 +9,42 @@
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
+            text-align: center;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 24px;
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark text color for visibility */
+            position: fixed;
+            padding: 20px;
+            text-align: left;
+            border-right: 1px solid #ddd; /* Light border for separation */
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333; /* Text color */
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #f0f0f0; /* Light gray hover effect */
+        }
+
+        .content {
+            margin-left: 220px; /* Space for the sidebar */
+            padding: 20px;
+            text-align: center;
         }
 
         .department {
@@ -28,9 +52,9 @@
             padding: 15px;
             background-color: #e2e2e2;
             border-radius: 10px;
-            display: inline-block;
             cursor: pointer;
             transition: background-color 0.3s;
+            display: inline-block;
         }
 
         .department:hover {
@@ -54,17 +78,24 @@
     <h1>Welcome to Dr. Izzeldin's University Courses</h1>
 </header>
 
-<p>Choose your department to view the available courses:</p>
-
-<div class="department" onclick="location.href='IT Department.html'">
-    IT Department
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="it_department.html">IT Department</a>
+    <a href="cs_department.html">Computer Science Department</a>
+    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a> <!-- Mailto link for sending emails -->
 </div>
 
-<div class="department" onclick="location.href='cs_department.html'">
-    Computer Science Department
+<div class="content">
+    <p>Choose your department to view the available courses:</p>
+
+    <div class="department" onclick="location.href='it_department.html'">
+        IT Department
+    </div>
+
+    <div class="department" onclick="location.href='cs_department.html'">
+        Computer Science Department
+    </div>
 </div>
-
-
 
 <footer>
     &copy; 2024 Dr. Izzeldin's University Courses
