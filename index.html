@@ -16,33 +16,43 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative; /* For relative positioning */
+        }
+
+        header img {
+            position: absolute; /* Aligns the image in the header */
+            left: 20px; /* Position it towards the left */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for vertical centering */
+            width: 50px; /* Width of the logo */
+            height: 50px; /* Height of the logo */
         }
 
         .sidebar {
             width: 200px;
             height: 100vh;
-            background-color: #fff; /* White background */
-            color: #333; /* Dark text color for visibility */
+            background-color: #fff;
+            color: #333;
             position: fixed;
             padding: 20px;
             text-align: left;
-            border-right: 1px solid #ddd; /* Light border for separation */
+            border-right: 1px solid #ddd;
         }
 
         .sidebar a {
             display: block;
             padding: 10px;
-            color: #333; /* Text color */
+            color: #333;
             text-decoration: none;
             transition: background-color 0.3s;
         }
 
         .sidebar a:hover {
-            background-color: #f0f0f0; /* Light gray hover effect */
+            background-color: #f0f0f0;
         }
 
         .content {
-            margin-left: 220px; /* Space for the sidebar */
+            margin-left: 220px;
             padding: 20px;
             text-align: center;
         }
@@ -75,14 +85,15 @@
 <body>
 
 <header>
-    <h1>Welcome to Dr. Izzeldin's University Courses</h1>
+    <img src="Logo_of_the_University_of_Khartoum.jpeg" alt="University Logo"> <!-- The logo image -->
+    <h1>Welcome to Dr. Izzeldin's University Courses</h1> <!-- Header text -->
 </header>
 
 <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="IT Department.html">IT Department</a>
     <a href="Computer Science Department.html">Computer Science Department</a>
-    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a> <!-- Mailto link for sending emails -->
+    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a> <!-- Mailto link -->
 </div>
 
 <div class="content">
@@ -92,7 +103,7 @@
         IT Department
     </div>
 
-    <div class="department" onclick="location.href="Computer Science Department.html">
+    <div class="department" onclick="location.href='Computer Science Department.html'">
         Computer Science Department
     </div>
 </div>
