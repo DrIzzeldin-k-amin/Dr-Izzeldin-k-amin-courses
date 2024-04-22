@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Department - Courses</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh; /* Center the content vertically */
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .course {
+            background-color: #e2e2e2;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            text-align: center;
+            width: 200px; /* Fixed width for consistent design */
+        }
+
+        .course:hover {
+            background-color: #d2d2d2;
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .course-code {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IT Department - Courses</h1>
+</header>
+
+<div class="content">
+    <p>Select a course to learn more:</p>
+
+    <div class="course" onclick="location.href='operating_systems.html'">
+        <div class="course-title">Operating Systems</div>
+        <div class="course-code">Course Code: 405</div>
+    </div>
+
+    <div class="course" onclick="location.href='discrete_structures.html'">
+        <div class="course-title">Discrete Structures</div>
+        <div class="course-code">Course Code: T2023</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 IT Department - University Courses
+</footer>
+
+</body>
+</html>
