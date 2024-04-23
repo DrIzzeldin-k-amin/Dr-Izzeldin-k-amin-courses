@@ -16,6 +16,17 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            display: flex; /* Use flexbox to align elements */
+            justify-content: center; /* Center the title */
+            align-items: center; /* Vertically center elements */
+            position: relative; /* Allow absolute positioning */
+        }
+
+        header img {
+            position: absolute; /* Position the logo absolutely */
+            left: 20px; /* Position on the leftmost side */
+            height: 40px; /* Logo height */
+            width: auto; /* Maintain aspect ratio */
         }
 
         .sidebar {
@@ -46,7 +57,7 @@
             padding: 20px;
             display: flex;
             justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
+            align-items: flex-start; /* Align content toward the top */
             height: calc(100vh - 60px); /* Account for the footer */
         }
 
@@ -61,7 +72,7 @@
         }
 
         .course:hover {
-            background-color: #d2d2d2;
+            background-color: #d2d2d2; /* Change color on hover */
         }
 
         footer {
@@ -78,18 +89,20 @@
 <body>
 
 <header>
-    <h1>Computer Science Department</h1>
+    <!-- Add the logo to the leftmost position -->
+    <img src="Logo_of_the_University_of_Khartoum.jpeg" alt="Department Logo"> 
+    <h1>Computer Science Department</h1> <!-- Centered title -->
 </header>
 
 <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="IT Department.html">IT Department</a>
     <a href="Computer Science Department.html">Computer Science Department</a>
-    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a> <!-- Link to send email -->
+    <a href="mailto:izzeldinkamilaminmustafa@gmail.com">Contact Us</a>
 </div>
 
 <div class="content">
-    <div class="course" onclick="location.href='operating_systemsCS.html'"> <!-- Make the course clickable -->
+    <div class="course" onclick="location.href='operating_systemsCS.html'"> 
         <div class="course-title">Operating Systems</div>
         <div class="course-code">Course Code: حسب 405</div>
     </div>
@@ -98,6 +111,10 @@
 <footer>
     &copy; 2024 Computer Science Department - University Courses
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
