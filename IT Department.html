@@ -15,7 +15,17 @@
             background-color: #333;
             color: #fff;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            position: relative; /* To allow absolute positioning of image */
+        }
+
+        header img {
+            position: absolute; /* Absolute position for the image */
+            left: 20px; /* Leftmost position */
+            width: 50px; /* Width of the image */
+            height: auto; /* Maintain aspect ratio */
         }
 
         .sidebar {
@@ -43,7 +53,7 @@
 
         .content {
             margin-left: 220px;
-            height: 80vh; /* To vertically center content */
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,7 +68,7 @@
             transition: background-color 0.3s;
             cursor: pointer;
             text-align: center;
-            width: 200px; /* Fixed width for consistent design */
+            width: 200px;
         }
 
         .course:hover {
@@ -89,7 +99,8 @@
 <body>
 
 <header>
-    <h1>IT Department - Courses</h1>
+    <img src="Logo_of_the_University_of_Khartoum.jpeg" alt="Department Logo"> <!-- Logo on the left -->
+    <h1>IT Department - Courses</h1> <!-- Centered text -->
 </header>
 
 <div class="sidebar">
@@ -116,6 +127,10 @@
 <footer>
     &copy; 2024 IT Department - University Courses
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
